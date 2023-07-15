@@ -27,40 +27,41 @@
 
 <body>
     <!-- Header Area Start Here -->
-    <header class="mt-50 mb-50">
+    <header class="Header-Area pt-40 pb-40">
         <div class="container">
             <div class="header-top-area">
                 <div class="row align-items-center">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 text-center">
                         <div class="logo">
                             <a href="#"><img src="img/logo/bonfire.png" alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-xl-4">
-                        <div class="row align-items-center">
+                        <div class="middle">
+                            <div class="row">
+                                <div class="location d-flex pr-40 pl-70">
+                                    <p>Quicklinks</p>
+                                    <i class="fas fa-map-marker-alt"></i>
 
-                            <div class="location d-flex pr-30">
-                                <p>Quicklinks</p>
-                                <i class="fas fa-map-marker-alt"></i>
+                                    <div class="select-from-dropdown">
+                                        <select id="dropdown">
+                                            <option value="option1">Select Form Dropdown</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                               
                             </div>
-
-
-                            <div class="select-from-dropdown">
-                                <select id="dropdown">
-                                    <option value="option1">Option 1</option>
-                                    <option value="option2">Option 2</option>
-                                    <option value="option3">Option 3</option>
-                                </select>
-                            </div>
-
                         </div>
 
                     </div>
+
                     <div class="col-xl-4">
                         <div class="search-container text-right">
                             <form action="/action_page.php">
-                                <input type="text" placeholder="Search.." name="search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
+                                <input id="searce" type="text" placeholder="Search for somthing here" name="search">
+                                <button id="searce1" type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
                     </div>
@@ -161,8 +162,13 @@
         </div>
     </div>
 
+    <!-- Map Area End HEre -->
 
-    <!-- Map Area Start HEre -->
+     <!-- Screen Area Start HEre -->
+     <div class="screen-area img-fluid">
+        <a href="#"><img src="img/screen/screen.jpg" alt=""></a>
+     </div>
+     <!-- Screen Area End HEre -->
 
 
 
