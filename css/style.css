@@ -330,3 +330,37 @@ body {
 .container {
 	max-width: 945px;
 }
+/* 
+Menu Css start here */
+.menu-area {
+	background: #efefef;
+	margin-bottom: -15px;
+}
+.menu-area .col-xl-2 {
+	padding: 0;
+}
+.menu-area .col-xl-2:first-child{
+	padding-left: 15px;
+}
+.menu-area .col-xl-2:last-child{
+	padding-right: 15px;
+}
+.menu-area li {
+	border: 1px solid #c6c6c6;
+	padding: 38px 0px;
+	background: #ffffff;
+	border-bottom: 5px solid #701dbb;
+	
+}
+.menu-area li a, i {
+	color: #707070;
+	transition: .3s;
+}
+.menu-area li:hover a{
+	color: #58159b;
+}
+.menu-area li:hover i{
+	color: #58159b;
+}
+
+/* Menu Css end here */
