@@ -256,7 +256,7 @@ label {
 /* 
 Header CSS start HEre */
 body {
-	margin: auto;
+	margin: 0 auto;
 	padding: 0;
 }
 
@@ -281,6 +281,9 @@ body {
 	color: #c7c7c7;
 	font-size: 20px;
 }
+.fas.fa-clock {
+	color: #58159b;
+}
 .Header-Area .header-top-area .middle .select-from-dropdown {
 	position: absolute;
 	top: 0;
@@ -294,15 +297,22 @@ body {
 .Header-Area .header-top-area .middle .select-from-dropdown #dropdown {
 	margin-left: 15px;
 }
+.banner-area img {
+	width: 100%;
+}
 #searce {
 	padding: 5px 15px;
 	border: 1px solid #e6e6e6;
+}
+.menu-area li i {
+	font-size: 21px;
+	/* font-weight: 700; */
 }
 #searce1 {
 	padding: 5px 15px;
 	background: none;
 	border: none;
-	color: #58159b !important;
+	color: #58159b;
 	position: absolute;
 	right: 10px;
 }
@@ -311,11 +321,9 @@ body {
 	border: none;
 	font-size: 12px;
 	background: none;
+	font-weight: 600;
 }
 
-.fas.fa-clock {
-	color: #58159b;
-}
 .Header-Area .header-top-area .search-container form input::placeholder {
 	font-size: 12px;
 	color: #bfbfbf;
@@ -323,11 +331,29 @@ body {
 .map-area{
 	background: #2d2d2d;
 }
+.map img {
+	width: 100%;
+}
+.map-thumb {
+	position: relative;
+}
+.map-thumb .underline {
+	position: absolute;
+	content: " ";
+	width: 143px;
+	height: 3px;
+	background: #6d6d6d;
+	top: 43%;
+	right: 0;
+	left: 77%;
+}
 .section-title h2 {
-	color: #fff;
+	color: #d5d5d5;
+	font-weight: 5;
 }
 .section-title p {
 	color: #6e22ad;
+	font-weight: 5;
 }
 
 .container {
@@ -353,11 +379,19 @@ Menu Css start here */
 	padding: 38px 0px;
 	background: #ffffff;
 	border-bottom: 5px solid #701dbb;
+	transition: .3s;
 	
+}
+.menu-area li:hover{
+  transform: translateY(-10px); /* Standard syntax */
+  border-bottom: 10px solid #701dbb;
+
 }
 .menu-area li a, i {
 	color: #707070;
 	transition: .3s;
+	font-weight: 600;
+	font-size: 14px;
 }
 .menu-area li:hover a{
 	color: #58159b;
@@ -367,3 +401,68 @@ Menu Css start here */
 }
 
 /* Menu Css end here */
+
+
+
+.map-content h3 {
+	color: #d5d5d5;
+	font-weight: 5;
+	margin-top: 40px;
+	/* text-align: center; */
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.map-content p {
+	color: #d5d5d5;
+	font-size: 12px;
+}
+/* 
+TEAM AREA CSS START HERE  */
+
+.team-area {
+	background: #ebebeb;
+}
+
+.team-area .section-title  h2{
+	color: #717171;
+}
+.team-area .section-title p{
+	color: #717171;
+}
+.team-area .team .team-content h4 {
+	font-size: 20px;
+	margin-top: 10px;
+	color: #717171;
+	/* font-size: xxx-large; */
+	font-weight: 600;
+}
+.team-area .team .team-content span {
+	font-size: 14px;
+	color: #717171;
+}
+
+
+
+.team-slider {
+	text-align: center;
+	overflow: hidden;
+}
+
+.team-slider-wrapper {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.team-member {
+	flex: 0 0 200px;
+	margin: 10px;
+	/* text-align: center; */
+	/* background-color: #f2f2f2; */
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+
+/* 
+TEAM AREA CSS END HERE  */
