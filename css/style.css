@@ -256,7 +256,7 @@ label {
 /* 
 Header CSS start HEre */
 body {
-	margin: 0;
+	margin: auto;
 	padding: 0;
 }
 
@@ -302,7 +302,7 @@ body {
 	padding: 5px 15px;
 	background: none;
 	border: none;
-	color: #58159b;
+	color: #58159b !important;
 	position: absolute;
 	right: 10px;
 }
@@ -313,6 +313,9 @@ body {
 	background: none;
 }
 
+.fas.fa-clock {
+	color: #58159b;
+}
 .Header-Area .header-top-area .search-container form input::placeholder {
 	font-size: 12px;
 	color: #bfbfbf;
