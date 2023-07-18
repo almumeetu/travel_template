@@ -59,7 +59,7 @@ a:focus,
 a:hover,
 .portfolio-cat a:hover,
 .footer -menu li a:hover {
-	color: #2B96CC;
+	color: #914dcf;
 	text-decoration: none;
 }
 a,
@@ -273,6 +273,9 @@ body {
 	color: #c7c7c7;
 	font-size: 13px;
 	margin-right: 12px;
+}
+.screen-area img {
+	width: 100%;
 }
 .middle {
 	margin-top: 15px;
@@ -498,3 +501,106 @@ TEAM AREA CSS END HERE  */
 }
 
 /* text-box css End here */
+.footer-area {
+	background-color: #373737;
+}
+.nav-menu nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+  }
+  
+ .nav-menu nav ul li {
+	display: inline-block;
+	margin-right: 30px;
+	position: relative;
+}
+.v-line {
+	position: absolute;
+	content: " ";
+	height: 12px;
+	width: 1px;
+	background: #fff;
+	top: 31%;
+	right: 0;
+	/* left: 0; */
+	margin-right: -19px;
+}
+  
+  nav ul li:last-child {
+	margin-right: 0;
+  }
+  
+  .footer-content p {
+	color: #ffffff;
+	font-size: 10px;
+}
+  nav ul li a {
+	color: #d7d7d7;
+	text-decoration: none;
+	padding: 5px 7px;
+	font-size: 13px;
+  }
+  
+  nav ul li a:hover {
+	border-bottom: 3px solid #914dcf;
+  }
+
+  .social-link {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	margin: 3px 13px;
+}
+  
+.social-link i {
+	font-size: 12;
+	margin-right: 10px;
+	color: #fff;
+}
+.social-link a:hover i {
+	font-size: 12;
+	margin-right: 10px;
+	color: #914dcf;
+}
+  .social-links {
+	margin-top: 40px;
+	/* text-align: center; */
+}
+  
+  .social-links a, i {
+	font-size: 12px;
+	/* text-align: start; */
+}
+
+  .footer-end-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .footer-end-menu ul li {
+	display: inline-block;
+	margin-left: 10px;
+	
+}
+  
+  .footer-end-menu ul li:first-child {
+	margin-left: 15px;
+  }
+  
+  .footer-end-menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 0px;
+	font-size: 11px;
+  }
+  .footer-end-menu ul li a:hover {
+	border-bottom: none;
+  }
+  .footer-end-section p {
+	margin-left: 14px;
+	font-size: 12px;
+	margin-top: 25px;
+}
