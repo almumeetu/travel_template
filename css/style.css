@@ -466,3 +466,35 @@ TEAM AREA CSS START HERE  */
 
 /* 
 TEAM AREA CSS END HERE  */
+
+
+/* text-box css start here */
+.text-box-area {
+	background: #ebebeb;
+}
+.box {
+	padding: 60px 50px;
+	background: #fff;
+	position: relative;
+}
+.plus-icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.box h3 {
+	font-size: 28px;
+	color: #252525;
+	margin-bottom: 20px;
+}
+.box span{
+	font-size: 14px;
+	color: #6017a3;
+}
+.box p{
+	padding-top: 45px;
+	font-size: 12px;
+
+}
+
+/* text-box css End here */
