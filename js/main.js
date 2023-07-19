@@ -28,30 +28,58 @@ $(window).on('scroll', function () {
 //////////////////////////////////
 /////////////////////
 
-const slider = document.querySelector('.team-slider-wrapper');
+
+
+
+// const slider = document.querySelector('.team-slider-wrapper');
+// const teamMembers = document.querySelectorAll('.team-member');
+// let slideWidth = teamMembers[0].offsetWidth;
+// let currentIndex = 0;
+
+// function slide(direction) {
+// 	if (direction === 'prev') {
+// 		currentIndex--;
+// 	} else if (direction === 'next') {
+// 		currentIndex++;
+// 	}
+	
+// 	if (currentIndex < 0) {
+// 		currentIndex = teamMembers.length - 1;
+// 	} else if (currentIndex >= teamMembers.length) {
+// 		currentIndex = 0;
+// 	}
+	
+// 	const slidePosition = -currentIndex * slideWidth;
+// 	slider.style.transform = `translateX(${slidePosition}px)`;
+// }
+
+// document.querySelector('.prev').addEventListener('click', () => slide('prev'));
+// document.querySelector('.next').addEventListener('click', () => slide('next'));
+
+const carouselContainer = document.querySelector('.carousel-container');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
 const teamMembers = document.querySelectorAll('.team-member');
-let slideWidth = teamMembers[0].offsetWidth;
-let currentIndex = 0;
+const teamMemberWidth = teamMembers[0].offsetWidth;
+const visibleItems = 4;
+let currentPosition = 0;
 
-function slide(direction) {
-	if (direction === 'prev') {
-		currentIndex--;
-	} else if (direction === 'next') {
-		currentIndex++;
-	}
-	
-	if (currentIndex < 0) {
-		currentIndex = teamMembers.length - 1;
-	} else if (currentIndex >= teamMembers.length) {
-		currentIndex = 0;
-	}
-	
-	const slidePosition = -currentIndex * slideWidth;
-	slider.style.transform = `translateX(${slidePosition}px)`;
-}
+prevButton.addEventListener('click', () => {
+  currentPosition += teamMemberWidth;
+  if (currentPosition > 0) {
+    currentPosition = -(teamMemberWidth * (teamMembers.length - visibleItems));
+  }
+  carouselContainer.style.transform = `translateX(${currentPosition}px)`;
+});
 
-document.querySelector('.prev').addEventListener('click', () => slide('prev'));
-document.querySelector('.next').addEventListener('click', () => slide('next'));
+nextButton.addEventListener('click', () => {
+  currentPosition -= teamMemberWidth;
+  if (currentPosition < -(teamMemberWidth * (teamMembers.length - visibleItems))) {
+    currentPosition = 0;
+  }
+  carouselContainer.style.transform = `translateX(${currentPosition}px)`;
+});
+
 
 
 // mainSlider
@@ -102,7 +130,7 @@ $('.owl-carousel').owlCarousel({
 	items:1,
 	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
     nav:true,
-	dots:false,
+	dots:true,
     responsive:{
         0:{
             items:1
@@ -111,7 +139,7 @@ $('.owl-carousel').owlCarousel({
             items:3
         },
         992:{
-            items:5
+            items:4
         }
     }
 })
