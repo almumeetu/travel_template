@@ -387,7 +387,7 @@ Menu Css start here */
 }
 .menu-area li:hover{
   transform: translateY(-10px); /* Standard syntax */
-  border-bottom: 10px solid #701dbb;
+  /* border-bottom: 10px solid #701dbb; */
 
 }
 .menu-area li a, i {
@@ -429,8 +429,9 @@ TEAM AREA CSS START HERE  */
 .team-area .section-title  h2{
 	color: #717171;
 }
-.team-area .section-title p{
+.team-area .section-title p {
 	color: #717171;
+	font-weight: 500;
 }
 .team-area .team .team-content h4 {
 	font-size: 20px;
@@ -512,8 +513,53 @@ TEAM AREA CSS START HERE  */
 .team-thumb img {
 	width: 100%;
 }
+/* .owl-nav {
+	display: none;
+} */
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-dots .owl-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dots .owl-dot.active {
+  background-color: #555;
+}
 
 
+#pagination-dots {
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  #pagination-dots ul {
+	display: inline-block;
+	padding: 0;
+	list-style-type: none;
+  }
+  
+  #pagination-dots li {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	background-color: #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  #pagination-dots li.active {
+	background-color: #555;
+  }
 /* 
 TEAM AREA CSS END HERE  */
 

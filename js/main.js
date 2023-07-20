@@ -80,7 +80,22 @@ nextButton.addEventListener('click', () => {
   carouselContainer.style.transform = `translateX(${currentPosition}px)`;
 });
 
+const dots = document.querySelectorAll('#pagination-dots .dot');
 
+// Function to update the active dot
+function updateActiveDot(index) {
+  dots.forEach((dot, i) => {
+    if (i === index) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+}
+
+// Usage example: Update active dot when a new page or slide is selected
+const currentPage = 2; // Example: the current page or slide index
+updateActiveDot(currentPage);
 
 // mainSlider
 function mainSlider() {
@@ -124,27 +139,41 @@ mainSlider();
 
 
 // owlCarousel
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-	items:1,
-	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-    nav:true,
-	dots:true,
-    responsive:{
-        0:{
-            items:1
+$(document).ready(function() {
+  $(".carousel-container").each(function() {
+    var carousel = $(this).find(".owl-carousel");
+    var dotsContainer = $(this).find(".carousel-dots");
+
+    carousel.owlCarousel({
+      // Owl Carousel options
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      dotsContainer: dotsContainer,
+      responsive: {
+        0: {
+          items: 1
         },
-        767:{
-            items:3
+        600: {
+          items: 3
         },
-        992:{
-            items:4
+        1000: {
+          items: 4
         }
-    }
-})
+      }
+    });
 
-
+    carousel.on("changed.owl.carousel", function(event) {
+      var currentItem = event.item.index;
+      dotsContainer.find(".owl-dot").removeClass("active");
+      dotsContainer
+        .find(".owl-dot")
+        .eq(currentItem % event.item.count)
+        .addClass("active");
+    });
+  });
+});
 
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({
