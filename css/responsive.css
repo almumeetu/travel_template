@@ -13,7 +13,36 @@
 
  
 /* Tablet desktop :768px. */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .middle {
+        margin-left: -200px;
+    }
+    .search-container.text-right {
+        margin-top: -44px;
+    }
+    .nav-menu nav ul li {
+        margin-right: 0px;
+    }
+    .v-line {
+        margin-right: 0;
+    }
+    .social-links {
+        margin-left: 40px;
+    }
+    .social-link {
+        margin: 3px 3px;
+    }
+    .box h3 {
+        font-size: 23px;
+      
+        margin-bottom: 15px;
+    }
+    .box p {
+	padding-top: 20px;
+	font-size: 12px;
+}
+    
 
 
 }
@@ -21,12 +50,46 @@
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-
+    .underline {
+        display: none;
+    }
+    .save-time {
+        margin-bottom: 25px;
+    }
+    .win-over {
+        margin-bottom: 25px;
+    }
+    .map {
+        margin-bottom: 30px;
+    }
+    .box {
+        margin-bottom: 20px;
+    }
+    .box {
+        padding: 45px 20px;
+    }
+    .footer-nav {
+        text-align: center;
+    }
+    .footer-end-menu {
+        text-align: center;
+    }
+    .footer-logo.pb-30 {
+        text-align: center;
+    }
+    .nav-menu nav ul li {
+        margin-right: 20px;
+    }
+    .v-line {
+        right: 7px;
+    }
  
 }
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
- 
+.section-title h2 {
+	font-size: 30px;
+}
 }
